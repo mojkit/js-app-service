@@ -1,0 +1,24 @@
+{
+  "name": "@wave/app-service",
+  "version": "1.0.0",
+  "description": "A TypeScript package that converts fluent method chains into structured command and query objects",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": "./index.ts"
+  },
+  "scripts": {
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "examples": "bun run examples.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^25.7.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
