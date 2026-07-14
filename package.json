@@ -1,5 +1,5 @@
 {
-  "name": "@wave/app-service",
+  "name": "@mojkit/app-service",
   "version": "1.0.0",
   "description": "A TypeScript package that converts fluent method chains into structured command and query objects",
   "module": "index.ts",

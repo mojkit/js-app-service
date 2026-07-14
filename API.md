@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-bun install @wave/app-service
+bun install @mojkit/app-service
 ```
 
 ## Core Concepts
@@ -54,7 +54,7 @@ app.<Namespace>('aggregate-id').<command|query>
 The main proxy object that provides the fluent API.
 
 ```typescript
-import app from '@wave/app-service';
+import app from '@mojkit/app-service';
 ```
 
 ### Commands
@@ -171,7 +171,7 @@ await app.Users('user-123').query.getProfile().withRelations('orders');
 Sets a custom dispatcher function that will be called with the generated command/query object.
 
 ```typescript
-import { setDispatcher } from '@wave/app-service';
+import { setDispatcher } from '@mojkit/app-service';
 
 setDispatcher(async (obj) => {
   // Send to message bus, websocket, etc.
@@ -188,7 +188,7 @@ setDispatcher(async (obj) => {
 Resets the dispatcher to the default (which just returns the object).
 
 ```typescript
-import { resetDispatcher } from '@wave/app-service';
+import { resetDispatcher } from '@mojkit/app-service';
 
 resetDispatcher();
 ```
@@ -245,7 +245,7 @@ type Dispatcher = (obj: DispatchObject) => Promise<any>;
 ### Custom Dispatcher with RabbitMQ
 
 ```typescript
-import { setDispatcher } from '@wave/app-service';
+import { setDispatcher } from '@mojkit/app-service';
 import amqp from 'amqplib';
 
 const connection = await amqp.connect('amqp://localhost');
@@ -272,7 +272,7 @@ setDispatcher(async (obj) => {
 ### Custom Dispatcher with WebSocket
 
 ```typescript
-import { setDispatcher } from '@wave/app-service';
+import { setDispatcher } from '@mojkit/app-service';
 
 const ws = new WebSocket('ws://localhost:8080');
 
@@ -302,7 +302,7 @@ setDispatcher(async (obj) => {
 You can create type-safe wrappers for your specific domain:
 
 ```typescript
-import app from '@wave/app-service';
+import app from '@mojkit/app-service';
 
 // Define your domain types
 interface User {

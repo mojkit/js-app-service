@@ -2,7 +2,7 @@
 
 ## Overview
 
-Successfully implemented a production-ready TypeScript package (`@wave/app-service`) that converts fluent method chains
+Successfully implemented a production-ready TypeScript package (`@mojkit/app-service`) that converts fluent method chains
 into structured command and query objects for message bus or WebSocket dispatch.
 
 ## What Was Built
@@ -259,7 +259,7 @@ A sophisticated proxy-based system that provides:
 ## Usage Example
 
 ```typescript
-import app, { setDispatcher } from '@wave/app-service';
+import app, { setDispatcher } from '@mojkit/app-service';
 
 // Configure dispatcher
 setDispatcher(async (obj) => {

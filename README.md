@@ -5,7 +5,7 @@ A TypeScript package that converts fluent method chains into structured command 
 ## Installation
 
 ```bash
-bun install @wave/app-service
+bun install @mojkit/app-service
 ```
 
 ## Overview
@@ -18,7 +18,7 @@ objects that can be dispatched over a message bus (e.g., RabbitMQ) or websocket.
 ### Basic Command
 
 ```typescript
-import app from '@wave/app-service';
+import app from '@mojkit/app-service';
 
 // Method chain
 await app.MyContext.MyAggregate.myCommand({ foo: 'bar' });

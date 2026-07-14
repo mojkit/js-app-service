@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Initial release of @wave/app-service
+- Initial release of @mojkit/app-service
 - Proxy-based fluent API for building command and query objects
 - Support for hierarchical namespaces (e.g., `MyContext.MyAggregate`)
 - Command pattern with single object payload
@@ -87,4 +87,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Works with Bun runtime
 - Fast execution and testing
 
-[1.0.0]: https://github.com/wave/app-service/releases/tag/v1.0.0
+[1.0.0]: https://github.com/mojkit/app-service/releases/tag/v1.0.0

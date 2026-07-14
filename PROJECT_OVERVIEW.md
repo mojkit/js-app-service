@@ -1,8 +1,8 @@
-# @wave/app-service - Project Overview
+# @mojkit/app-service - Project Overview
 
 ## 📦 Package Information
 
-- **Name**: @wave/app-service
+- **Name**: @mojkit/app-service
 - **Version**: 1.0.0
 - **Description**: A TypeScript package that converts fluent method chains into structured command and query objects
 - **Runtime**: Bun
@@ -59,7 +59,7 @@ app-service/
 ## 🚀 Quick Start
 
 ```typescript
-import app from '@wave/app-service';
+import app from '@mojkit/app-service';
 
 // Execute a command
 await app.Users.create({ name: 'John', email: 'john@example.com' });
@@ -157,7 +157,7 @@ bun run typecheck
 ### Default Export
 
 ```typescript
-import app from '@wave/app-service';
+import app from '@mojkit/app-service';
 ```
 
 The main proxy object for building commands and queries.
@@ -172,7 +172,7 @@ import {
   type QueryObject,
   type DispatchObject,
   type Dispatcher
-} from '@wave/app-service';
+} from '@mojkit/app-service';
 ```
 
 ## 🎨 Usage Patterns

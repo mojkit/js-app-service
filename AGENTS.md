@@ -208,7 +208,7 @@ test: add edge cases for aggregate ID handling
 **Configuration:**
 ```typescript
 // Set up dispatcher at application startup
-import { setDispatcher } from '@wave/app-service';
+import { setDispatcher } from '@mojkit/app-service';
 
 setDispatcher(async (obj) => {
   // Your dispatch logic

@@ -1,11 +1,11 @@
 # Quick Start Guide
 
-Get up and running with `@wave/app-service` in 5 minutes.
+Get up and running with `@mojkit/app-service` in 5 minutes.
 
 ## Installation
 
 ```bash
-bun install @wave/app-service
+bun install @mojkit/app-service
 ```
 
 ## Basic Usage
@@ -13,7 +13,7 @@ bun install @wave/app-service
 ### 1. Import the package
 
 ```typescript
-import app from '@wave/app-service';
+import app from '@mojkit/app-service';
 ```
 
 ### 2. Execute a command
@@ -88,7 +88,7 @@ await app.Users.create({
 By default, the package just returns the generated object. To actually dispatch commands/queries, set up a custom dispatcher:
 
 ```typescript
-import { setDispatcher } from '@wave/app-service';
+import { setDispatcher } from '@mojkit/app-service';
 
 // Example: Send to a message bus
 setDispatcher(async (obj) => {
